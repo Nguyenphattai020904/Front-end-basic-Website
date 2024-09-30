@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/CSS/contact.css">
+    <script src="https://kit.fontawesome.com/f0a732d596.js" crossorigin="anonymous"></script>
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Import Google Font Poppins -->
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <!-- Logo -->
+        <a href="#" class="logo"><img src="/IMG/Logo.png" alt="logo"/></a>
+        <!-- Menu icon -->
+        <div class="menu-icon" onclick="toggleMenu()">
+            <!-- Three bars for the menu icon -->
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <!-- Navigation bar -->
+        <ul class="navbar">
+            <!-- Menu items -->
+            <li><a href="/HTML/Homepage.html" class="active">Home</a></li>
+            <li><a href="/HTML/shoppingcart.html">Shopping Cart</a></li>
+            <li><a href="#">Order</a></li>
+            <li><a href="/HTML/contact.html">Contact Us</a></li>
+            <li><a href="/HTML/profile.html">Profile</a></li>
+            <li><a href="/HTML/signin.html" class="user"><i class="fa-solid fa-user"></i>Sign In</a></li>
+            <li><a href="/HTML/signup.html">Register</a></li>
+        </ul>
+    </header>
+    <h1>Customer Support</h1>
+    <form>
+    <input type="text" placeholder="Your request or suggestion" required><br>
+    <button class="btn_send">Send</button>
+    </form>
+    <footer class="footer">
+        <ul class="contact">
+            <li><a href="#"><i class="fa-solid fa-phone"></i> 0916-XXX-763</a></li>
+            <li><a href="#"><i class="fa-solid fa-envelope"></i> abcdef@gmail.com</a></li>
+            <li><a href="#"><i class="fa-solid fa-map-pin"></i> Quarter 2, Thu Duc City, Ho Chi Minh City</a></li>
+        </ul>
+    </footer>
+    <script src="/JS/contact.js"></script>
+</body>
+</html>

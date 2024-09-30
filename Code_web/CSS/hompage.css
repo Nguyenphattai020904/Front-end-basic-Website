@@ -1,0 +1,245 @@
+/* Định nghĩa kiểu chữ Poppins Medium */
+.poppins-medium {
+    font-family: "Poppins", sans-serif; /* Sử dụng font chữ Poppins */
+    font-weight: 500; /* Trọng lượng chữ Medium */
+    font-style: normal; /* Kiểu chữ bình thường */
+}
+
+/* Định dạng header */
+header {
+    display: flex; /* Sử dụng flexbox */
+    justify-content: space-between; /* Canh giữa các phần tử và đặt khoảng cách dọc giữa chúng */
+    align-items: center; /* Căn chỉnh các phần tử theo chiều dọc */
+    padding: 10px; /* Khoảng cách padding ở bốn phía */
+    background-color: var(--grey); /* Màu nền của header */
+    color: white; /* Màu chữ của header */
+}
+
+/* Định dạng icon menu */
+.menu-icon {
+    display: none; /* Ẩn icon menu */
+    cursor: pointer; /* Con trỏ chuột thành hình bàn tay khi di chuyển qua icon */
+    float: right; /* Căn chỉnh icon menu sang phải */
+}
+
+.menu-icon .bar {
+    height: 3px; /* Chiều cao của thanh icon menu */
+    width: 25px; /* Chiều rộng của thanh icon menu */
+    background-color: white; /* Màu của thanh icon menu */
+    margin: 5px 0; /* Khoảng cách giữa các thanh icon menu */
+}
+
+/* Định dạng navigation bar */
+.navbar {
+    list-style: none; /* Loại bỏ dấu chấm liệt kê */
+    margin: 0; /* Xóa khoảng cách margin */
+    padding: 0; /* Xóa khoảng cách padding */
+    display: flex; /* Sử dụng flexbox */
+}
+
+.navbar li a {
+    text-decoration: none; /* Loại bỏ gạch chân dưới link */
+    color: #000; /* Màu chữ của các liên kết */
+    margin: 10px; /* Khoảng cách giữa các liên kết */
+}
+
+/* Media query cho màn hình nhỏ hơn 768px */
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: block; /* Hiển thị icon menu */
+    }
+
+    .navbar {
+        display: none; /* Ẩn navigation bar */
+        flex-direction: column; /* Xếp các phần tử theo chiều dọc */
+        position: fixed; /* Vị trí cố định */
+        top: 50px; /* Cách header 50px */
+        left: 0; /* Canh lề trái */
+        background-color: var(--main-color); /* Màu nền của navigation bar */
+        width: 140px; /* Chiều rộng của navigation bar */
+        border-radius: 10px; /* Bo góc navigation bar */
+    }
+
+    .navbar li a {
+        color: var(--white); /* Màu chữ của các liên kết */
+    }
+
+    .navbar.active {
+        display: flex; /* Hiển thị navigation bar */
+    }
+
+    .navbar li {
+        margin-right: 0; /* Xóa khoảng cách margin phải */
+        text-align: center; /* Căn giữa nội dung */
+        padding: 10px 0; /* Khoảng cách padding */
+    }
+
+    .products {
+        font-size: x-small; 
+    }
+}
+
+/* Định dạng nền body */
+body {
+    background-color: var(--grey); /* Màu nền của body */
+    font-family: "Poppins", sans-serif; /* Sử dụng font chữ Poppins */
+    font-weight: 500; /* Trọng lượng chữ Medium */
+    font-style: normal; /* Kiểu chữ bình thường */
+}
+
+/* Biến CSS */
+:root {
+    --main-color: #EE7745; /* Màu chính */
+    --grey: #D9D9D9; /* Màu xám */
+    --white: #FFF; /* Màu trắng */
+    --NavajoWhite1: #FFDEAD; /* Màu Navajo White 1 */
+    --hover: #794e0d; /* Màu khi di chuột qua */
+}
+
+/* Định dạng logo */
+.logo img {
+    float: left; /* Canh lề trái */
+    width: 40px; /* Chiều rộng của logo */
+    height: 40px; /* Chiều cao của logo */
+}
+
+/* Định dạng search bar */
+.search-bar {
+    display: flex; /* Sử dụng flexbox */
+    justify-content: center; /* Canh giữa các phần tử */
+    margin: 20px 0; /* Khoảng cách margin ở hai bên */
+}
+
+.search-bar input {
+    padding: 10px; /* Khoảng cách padding */
+    width: 70%; /* Chiều rộng của input */
+    border: none; /* Không có viền */
+    border-bottom: 2px solid #000; /* Viền dưới */
+    background-color: var(--grey); /* Màu nền của input */
+}
+
+.search-bar button {
+    margin-left: 10px; /* Khoảng cách margin bên trái */
+    border-radius: 5px; /* Bo góc */
+    padding: 10px; /* Khoảng cách padding */
+    border: none; /* Không có viền */
+    background-color: var(--main-color); /* Màu nền của button */
+    color: white; /* Màu chữ */
+    cursor: pointer; /* Con trỏ chuột thành hình bàn tay khi di chuyển qua button */
+}
+
+/* Định dạng sản phẩm */
+.products {
+    display: flex; /* Sử dụng flexbox */
+    justify-content: space-around; /* Canh giữa các phần tử và đặt khoảng cách dọc giữa chúng */
+    flex-wrap: wrap; /* Cho phép các phần tử wrap */
+}
+
+section {
+    display: block; /* Hiển thị dạng block */
+    border: 1px solid #ddd; /* Viền */
+    border-radius: 20px; /* Bo góc */
+    padding: 10px; /* Khoảng cách padding */
+    margin: 10px; /* Khoảng cách margin */
+    background-color: var(--white); /* Màu nền */
+}
+
+.products img {
+    max-width: 100%; /* Chiều rộng tối đa là 100% */
+    border-radius: 5px; /* Bo góc */
+}
+
+.products button {
+    background-color: var(--main-color); /* Màu nền của button */
+    color: white; /* Màu chữ */
+    padding: 10px 20px; /* Khoảng cách padding */
+    border: none; /* Không có viền */
+    border-radius: 5px; /* Bo góc */
+    cursor: pointer; /* Con trỏ chuột thành hình bàn tay khi di chuyển qua button */
+    margin: 7px; /* Khoảng cách margin */
+    flex-wrap: wrap; /* Cho phép các phần tử wrap */
+}
+
+/* Media query cho màn hình có độ rộng lớn hơn 62em */
+@media (min-width: 62em) {
+    section {
+        display: flex; /* Sử dụng flexbox */
+        display: block; /* Hiển thị dạng block */
+        flex-wrap: wrap; /* Cho phép các phần tử wrap */
+        justify-content: center; /* Canh giữa các phần tử */
+        margin: 0 5em; /* Khoảng cách margin */
+        margin: 20px; /* Khoảng cách margin */
+        width: 35%; /* Chiều rộng */
+        border-radius: 20px; /* Bo góc */
+    }
+
+    .logo img {
+        float: left; /* Canh lề trái */
+        width: 90px; /* Chiều rộng của logo */
+        height: 90px; /* Chiều cao của logo */
+    }
+
+    .products img {
+        border-radius: 5px; /* Bo góc */
+        width: 360px; /* Chiều rộng của hình ảnh */
+        height: 320px; /* Chiều cao của hình ảnh */
+        display: flex; /* Sử dụng flexbox */
+        margin-left: 89px; /* Khoảng cách margin bên trái */
+    }
+
+    .products h3 {
+        font-size: large; 
+    }
+
+
+    .products button {
+        width: 191px; /* Chiều rộng của button */
+        height: 57px; /* Chiều cao của button */
+        margin-left: 50px; /* Khoảng cách margin bên trái */
+        
+
+    }
+}
+
+/* Hiệu ứng khi di chuột qua button */
+button:hover {
+    background-color: var(--NavajoWhite1); /* Màu nền khi di chuột qua */
+    color: var(--main-color); /* Màu chữ khi di chuột qua */
+    transform: scale(1.1); /* Phóng to */
+    transition: transform 0.3s ease; /* Hiệu ứng transition */
+}
+
+/* Hiệu ứng khi di chuột qua link */
+a:hover {
+    color: var(--main-color); /* Màu chữ khi di chuột qua */
+    transform: scale(1.1); /* Phóng to */
+    transition: transform 0.3s ease; /* Hiệu ứng transition */
+}
+
+/* Hiệu ứng khi di chuột qua các liên kết */
+li a:hover {
+    color: var(--hover); /* Màu khi di chuột qua */
+    transform: scale(1.1); /* Phóng to */
+    transition: transform 0.3s ease; /* Hiệu ứng transition */
+}
+
+footer {
+    background-color: var(--main-color);
+    margin-left: -9px;
+    margin-right: -9px;
+    margin-top: 40px;
+}
+
+footer .contact {
+    list-style: none;
+    margin-left: -40px;
+    margin-bottom: -16px;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--white);
+    margin-left: 20px;
+}
+
+

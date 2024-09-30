@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping Cart</title>
+    <!-- Import CSS file for homepage styling -->
+    <link rel="stylesheet" href="/CSS/shoppingcard.css" />
+    <!-- Import Font Awesome for icons -->
+    <script
+    src="https://kit.fontawesome.com/f0a732d596.js" crossorigin="anonymous"></script>
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Import Google Font Poppins -->
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <!-- Logo -->
+        <a href="#" class="logo"><img src="/IMG/Logo.png" alt="logo"/></a>
+        <!-- Menu icon -->
+        <div class="menu-icon" onclick="toggleMenu()">
+            <!-- Three bars for the menu icon -->
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <!-- Navigation bar -->
+        <ul class="navbar">
+            <!-- Menu items -->
+            <li><a href="/HTML/Homepage.html" class="active">Home</a></li>
+            <li><a href="/HTML/shoppingcart.html">Shopping Cart</a></li>
+            <li><a href="#">Order</a></li>
+            <li><a href="/HTML/contact.html">Contact Us</a></li>
+            <li><a href="/HTML/profile.html">Profile</a></li>
+            <li><a href="/HTML/signin.html" class="user"><i class="fa-solid fa-user"></i>Sign In</a></li>
+            <li><a href="/HTML/signup.html">Register</a></li>
+        </ul>
+    </header>
+    <!-- search-bar -->
+    <div class="search-bar">
+        <!-- Input field for search -->
+        <input type="text" placeholder="Search" />
+        <!-- Button for search -->
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+    <!-- container -->
+    <div class="products">
+        <section class="product_1">
+            <img
+            src="/IMG/Goal3.webp" alt="product name"/>
+            <ul class="prduct1">
+            <li>GK000</li>
+            <li>White yellow</li>
+            <li>Price: 34,33$</li>
+            </ul>
+            <div class="payment">
+                <input class="quanliti" type="number" min="1" max="100" placeholder="1">   
+                <button class="buy">Buy</button>
+                <button class="close-button">X</button>
+            </div>
+        </section> 
+    </div>
+    <div class="products">
+        <section class="product_1">
+            <img
+            src="/IMG/Goal5.jpg" alt="product name"/>
+            <ul class="prduct1">
+            <li>GK001</li>
+            <li>Blue</li>
+            <li>Price: 113,09$</li>
+            </ul>
+            <div class="payment">
+                <input class="quanliti" type="number" min="1" max="100" placeholder="1">   
+                <button class="buy">Buy</button>
+                <button class="close-button">X</button>
+            </div>
+        </section> 
+    </div>
+    <div class="products">
+        <section class="product_1">
+            <img
+            src="/IMG/Goal1.jpg" alt="product name"/>
+            <ul class="prduct1">
+            <li>GK002</li>
+            <li>Grey red</li>
+            <li>Price: 56,54$</li>
+            </ul>
+            <div class="payment">
+                <input class="quanliti" type="number" min="1" max="100" placeholder="1">   
+                <button class="buy">Buy</button>
+                <button class="close-button">X</button>
+            </div>
+        </section> 
+    </div>
+    <div class="products">
+        <section class="product_1">
+            <img
+            src="/IMG/goal6.jpg" alt="product name"/>
+            <ul class="prduct1">
+            <li>GK003</li>
+            <li>White blue</li>
+            <li>Price: 72,70$</li>
+            </ul>
+            <div class="payment">
+                <input class="quanliti" type="number" min="1" max="100" placeholder="1">   
+                <button class="buy">Buy</button>
+                <button class="close-button">X</button>
+            </div>
+        </section> 
+    </div>
+    <!-- footer -->
+    <footer class="footer">
+        <ul class="contact">
+            <li><a href="#"><i class="fa-solid fa-phone"></i> 0916-XXX-763</a></li>
+            <li><a href="#"><i class="fa-solid fa-envelope"></i> abcdef@gmail.com</a></li>
+            <li><a href="#"><i class="fa-solid fa-map-pin"></i> Quarter 2, Thu Duc City, Ho Chi Minh City</a></li>
+        </ul>
+    </footer>
+    <script src="/JS/shoppingcart.js"></script>
+</body>
+</html>

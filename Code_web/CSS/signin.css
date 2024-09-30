@@ -1,0 +1,180 @@
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif; /* Sử dụng font chữ Poppins */
+    font-weight: 500; /* Trọng lượng chữ Medium */
+    font-style: normal; /* Kiểu chữ bình thường */
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500; 
+    font-style: normal;
+    background-color: var(--grey);
+}
+
+.btn_back {
+    float: left;
+    font-size: xx-large;
+    position: fixed;
+    top: 5%;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 5px;
+    color: var(--white);
+}
+
+.btn_back a {
+    color: var(--white);
+}
+
+
+
+:root {
+    --main-color: #EE7745; /* Màu chính */
+    --grey: #D9D9D9; /* Màu xám */
+    --white: #FFF; /* Màu trắng */
+    --NavajoWhite1: #FFDEAD; /* Màu Navajo White 1 */
+    --hover: #794e0d; /* Màu khi di chuột qua */
+}
+form {
+    background-color: var(--white);
+    border-radius: 10px;
+    margin-top: 90px ;
+}
+
+
+h1 {
+    color: var(--main-color);
+    font-size: xx-large;
+    margin-left: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+
+#username {
+    width: 80%;
+    border: none;
+    border-bottom: 2px solid var(--grey);
+    margin-left: 25px;
+    margin-bottom: 50px;
+}
+
+
+#password {
+    width: 80%;
+    border: none;
+    border-bottom: 2px solid var(--grey);
+    margin-left: 25px;
+}
+.forgot {
+    font-size: x-small;
+    font-style: italic;
+    float: right;
+    margin-right: 10px;
+}
+
+p {
+    font-size: small;
+    text-align: center;
+}
+
+
+button#sign_in_btn {
+    color: var(--white);
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 63px;
+    font-size: large;
+    margin-top: 50px;
+    width: 80px;
+    height: 40px;
+    margin-left: 100px;
+}
+
+button#sign_up_btn {
+    color: var(--white);
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 63px;
+    font-size: large;
+    width: 80px;
+    height: 40px;
+    margin-left: 100px;
+    margin-bottom: 25px;
+}
+
+#sign_in_btn a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: small;
+    margin-right: 0px;
+}
+
+#sign_up_btn a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: small;
+    margin-right: 0px;
+}
+
+button#sign_in_btn:hover {
+    background-color: var(--NavajoWhite1); /* Màu nền khi di chuột qua */
+    color: var(--main-color); /* Màu chữ khi di chuột qua */
+    transform: scale(1.1); /* Phóng to */
+    transition: transform 0.3s ease; /* Hiệu ứng transition */
+}
+
+button#sign_up_btn:hover {
+    background-color: var(--NavajoWhite1); /* Màu nền khi di chuột qua */
+    color: var(--main-color); /* Màu chữ khi di chuột qua */
+    transform: scale(1.1); /* Phóng to */
+    transition: transform 0.3s ease; /* Hiệu ứng transition */
+}
+
+.btn_back:hover {
+    background-color: var(--NavajoWhite1); /* Màu nền khi di chuột qua */
+    color: var(--main-color); /* Màu chữ khi di chuột qua */
+    transform: scale(1.1); /* Phóng to */
+    transition: transform 0.3s ease; /* Hiệu ứng transition */
+}
+
+.btn_back a:hover {
+    color: var(--main-color);
+}
+
+#sign_in_btn a:hover {
+    color: var(--main-color);
+}
+
+#sign_up_btn a:hover {
+    color: var(--main-color);
+}
+
+
+@media (min-width: 62em) {
+    form {
+        width: 450px;
+        height: 400px;
+        margin: 140px 525px;
+    }
+
+    .sign_in_form a {
+        margin-right: 64px;
+    }
+
+    button#sign_in_btn {
+        margin-left: 180px;
+    }
+    button#sign_up_btn {
+        margin-left: 180px;
+    }
+
+
+    .btn_back {
+        position: absolute;
+        top: 20%;
+        left: 35%;
+    }
+}
+
